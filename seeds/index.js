@@ -5,16 +5,6 @@ const seedProductTags = require('./product-tag-seeds');
 
 const sequelize = require('../config/connection');
 
-const config = {
-  host: 'localhost',
-  port: 3001,
-  database: 'ecommerce_db',
-  username: '',
-  password: '',
-  
-};
-
-
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
